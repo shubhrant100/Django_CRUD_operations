@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      {% for product in products%}
+          <a href="{% url 'update_product' product.id %}">
+              <li> {{ product.description}}</li>
+          </a>
+      {% endfor %}
+    </ul>
+
+    <a href="{% url 'create_product' %}">New product</a>
+
+  </body>
+</html>

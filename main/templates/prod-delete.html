@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form  method="post">
+      {%  csrf_token %}
+      <h2> are you sure you want to remove {{ product.description }} ?</h2>
+      <button type="submit" >confirm</button>
+    </form>
+  </body>
+</html>
